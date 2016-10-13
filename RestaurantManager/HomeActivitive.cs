@@ -25,7 +25,9 @@ namespace RestaurantManager
             this.FormBorderStyle = FormBorderStyle.Sizable;
             this.WindowState = FormWindowState.Maximized;
             Screen scr = Screen.PrimaryScreen; //đi lấy màn hình chính
-            _grTable.Left = 230;
+            _grTable.Dock = DockStyle.None;
+            _grTable.Size = new Size(scr.WorkingArea.Width-235, scr.WorkingArea.Height-140);
+            _grTable.Left = 225;
             _grTable.Top = 110;
             GetListView();
             GetTable();
@@ -36,7 +38,7 @@ namespace RestaurantManager
 
         private void HomeActivitive_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void _btnArea_Click(object sender, EventArgs e)
@@ -88,6 +90,8 @@ namespace RestaurantManager
 
         private void _lvTable_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (_lvTable.SelectedItems.Count == 0)
+                return;
             ListViewItem item = _lvTable.SelectedItems[0];
             _txtTable.Text = item.SubItems[1].Text.ToString().Trim();
         }

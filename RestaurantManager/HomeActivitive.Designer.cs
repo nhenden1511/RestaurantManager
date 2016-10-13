@@ -77,8 +77,8 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -106,9 +106,9 @@
             this.superTabControlPanel2.Controls.Add(this._btnTable);
             this.superTabControlPanel2.Controls.Add(this._btnArea);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 32);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(1284, 77);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(1284, 109);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -251,7 +251,6 @@
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Location = new System.Drawing.Point(12, 109);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(200, 100);
             // 
             // 
             // 
@@ -289,7 +288,6 @@
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Location = new System.Drawing.Point(12, 334);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(200, 100);
             // 
             // 
             // 
@@ -327,10 +325,9 @@
             this._grTable.CanvasColor = System.Drawing.SystemColors.Control;
             this._grTable.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this._grTable.Controls.Add(this._lvTable);
-            this._grTable.Dock = System.Windows.Forms.DockStyle.Right;
             this._grTable.Location = new System.Drawing.Point(229, 109);
             this._grTable.Name = "_grTable";
-            this._grTable.Size = new System.Drawing.Size(1055, 537);
+            this._grTable.Size = new System.Drawing.Size(500, 300);
             // 
             // 
             // 
@@ -371,7 +368,7 @@
             this._lvTable.Location = new System.Drawing.Point(0, 0);
             this._lvTable.MultiSelect = false;
             this._lvTable.Name = "_lvTable";
-            this._lvTable.Size = new System.Drawing.Size(1049, 516);
+            this._lvTable.Size = new System.Drawing.Size(494, 279);
             this._lvTable.SmallImageList = this._imageTable;
             this._lvTable.TabIndex = 0;
             this._lvTable.UseCompatibleStateImageBehavior = false;
@@ -390,7 +387,6 @@
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel4.Location = new System.Drawing.Point(12, 228);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(200, 100);
             // 
             // 
             // 
