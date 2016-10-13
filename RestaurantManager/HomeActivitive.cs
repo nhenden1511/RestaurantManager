@@ -1,6 +1,7 @@
 ﻿using RestaurantManager.Position;
 using RestaurantManager.Server;
 using RestaurantManager.View.Manager;
+using RestaurantManager.View.Personal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,22 +19,17 @@ namespace RestaurantManager
         public HomeActivitive()
         {
             InitializeComponent();
+            _grList.Font = Contant.GroupFont();
+            _grSearch.Font = Contant.GroupFont();
+            _grStatistic.Font = Contant.GroupFont();
+            _grTable.Font = Contant.GroupFont();
         }
 
         private void HomeActivitive_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.Sizable;
-            this.WindowState = FormWindowState.Maximized;
-            Screen scr = Screen.PrimaryScreen; //đi lấy màn hình chính
-            _grTable.Dock = DockStyle.None;
-            _grTable.Size = new Size(scr.WorkingArea.Width-235, scr.WorkingArea.Height-140);
-            _grTable.Left = 225;
-            _grTable.Top = 110;
+            CheckSize();
             GetListView();
             GetTable();
-            
-            //_grTable.Right = (scr.WorkingArea.Height)/ 2;
-            //_grTable.Bottom = (scr.WorkingArea.Height)/ 2;
         }
 
         private void HomeActivitive_FormClosing(object sender, FormClosingEventArgs e)
@@ -84,8 +80,8 @@ namespace RestaurantManager
 
         private void _lvTable_DoubleClick(object sender, EventArgs e)
         {
-            //MessageBox.Show(_lvTable.SelectedItems[3].SubItems[2].Text);
-            //MessageBox.Show("12");
+            var dialog = new ManagerTable();
+            dialog.ShowDialog();
         }
 
         private void _lvTable_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,6 +117,18 @@ namespace RestaurantManager
         {
             var viandDialog = new ViandDialog(new GenusFunction(DbConnect.XConnect()), new ViandFunction(DbConnect.XConnect()));
             viandDialog.Show();
+        }
+
+        private void HomeActivitive_Resize(object sender, EventArgs e)
+        {
+            CheckSize();
+        }
+
+        private void CheckSize()
+        {
+            _grTable.Size = new Size(this.Width - 300, this.Height - 160);
+            _grTable.Left = 270;
+            _grTable.Top = 110;
         }
     }
 }

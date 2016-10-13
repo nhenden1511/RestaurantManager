@@ -160,6 +160,12 @@
     <Compile Include="View\Manager\ViandDialog.Designer.cs">
       <DependentUpon>ViandDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Personal\ManagerTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Personal\ManagerTable.Designer.cs">
+      <DependentUpon>ManagerTable.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HomeActivitive.resx">
       <DependentUpon>HomeActivitive.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Manager\ViandDialog.resx">
       <DependentUpon>ViandDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Personal\ManagerTable.resx">
+      <DependentUpon>ManagerTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
