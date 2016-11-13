@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeActivitive));
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this._btnConnect = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this._btnEmployee = new System.Windows.Forms.Button();
             this._btnViand = new System.Windows.Forms.Button();
@@ -42,6 +38,10 @@
             this._btnTable = new System.Windows.Forms.Button();
             this._btnArea = new System.Windows.Forms.Button();
             this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this._btnConnect = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
@@ -53,10 +53,11 @@
             this._imageTable = new System.Windows.Forms.ImageList(this.components);
             this._grSearch = new DevComponents.DotNetBar.Controls.GroupPanel();
             this._txtTable = new System.Windows.Forms.TextBox();
+            this._txtTableName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
-            this.superTabControlPanel1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
+            this.superTabControlPanel1.SuspendLayout();
             this._grTable.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,8 +78,8 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -98,46 +99,6 @@
             this.superTabItem4});
             this.superTabControl1.Text = "superTabControl1";
             // 
-            // superTabControlPanel1
-            // 
-            this.superTabControlPanel1.Controls.Add(this._btnConnect);
-            this.superTabControlPanel1.Controls.Add(this.button1);
-            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 32);
-            this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(1077, 77);
-            this.superTabControlPanel1.TabIndex = 1;
-            this.superTabControlPanel1.TabItem = this.superTabItem1;
-            // 
-            // _btnConnect
-            // 
-            this._btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._btnConnect.Location = new System.Drawing.Point(805, 3);
-            this._btnConnect.Name = "_btnConnect";
-            this._btnConnect.Size = new System.Drawing.Size(109, 68);
-            this._btnConnect.TabIndex = 1;
-            this._btnConnect.Text = "CONNECT";
-            this._btnConnect.UseVisualStyleBackColor = true;
-            this._btnConnect.Click += new System.EventHandler(this._btnConnect_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 72);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // superTabItem1
-            // 
-            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
-            this.superTabItem1.GlobalItem = false;
-            this.superTabItem1.Name = "superTabItem1";
-            this.superTabItem1.Text = "BÁN HÀNG";
-            // 
             // superTabControlPanel2
             // 
             this.superTabControlPanel2.Controls.Add(this._btnEmployee);
@@ -146,9 +107,9 @@
             this.superTabControlPanel2.Controls.Add(this._btnTable);
             this.superTabControlPanel2.Controls.Add(this._btnArea);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 32);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(1077, 77);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(1077, 109);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -212,6 +173,46 @@
             this.superTabItem2.GlobalItem = false;
             this.superTabItem2.Name = "superTabItem2";
             this.superTabItem2.Text = "QUẢN LÝ";
+            // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.Controls.Add(this._btnConnect);
+            this.superTabControlPanel1.Controls.Add(this.button1);
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 32);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(1077, 77);
+            this.superTabControlPanel1.TabIndex = 1;
+            this.superTabControlPanel1.TabItem = this.superTabItem1;
+            // 
+            // _btnConnect
+            // 
+            this._btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._btnConnect.Location = new System.Drawing.Point(805, 3);
+            this._btnConnect.Name = "_btnConnect";
+            this._btnConnect.Size = new System.Drawing.Size(109, 68);
+            this._btnConnect.TabIndex = 1;
+            this._btnConnect.Text = "CONNECT";
+            this._btnConnect.UseVisualStyleBackColor = true;
+            this._btnConnect.Click += new System.EventHandler(this._btnConnect_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 72);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // superTabItem1
+            // 
+            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem1.GlobalItem = false;
+            this.superTabItem1.Name = "superTabItem1";
+            this.superTabItem1.Text = "BÁN HÀNG";
             // 
             // superTabControlPanel3
             // 
@@ -428,11 +429,19 @@
             this._txtTable.Size = new System.Drawing.Size(100, 20);
             this._txtTable.TabIndex = 6;
             // 
+            // _txtTableName
+            // 
+            this._txtTableName.Location = new System.Drawing.Point(71, 534);
+            this._txtTableName.Name = "_txtTableName";
+            this._txtTableName.Size = new System.Drawing.Size(100, 20);
+            this._txtTableName.TabIndex = 7;
+            // 
             // HomeActivitive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 566);
+            this.Controls.Add(this._txtTableName);
             this.Controls.Add(this._txtTable);
             this.Controls.Add(this._grSearch);
             this.Controls.Add(this._grTable);
@@ -447,8 +456,8 @@
             this.Resize += new System.EventHandler(this.HomeActivitive_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
-            this.superTabControlPanel1.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
+            this.superTabControlPanel1.ResumeLayout(false);
             this._grTable.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -480,5 +489,6 @@
         private System.Windows.Forms.ListView _lvTable;
         public System.Windows.Forms.ImageList _imageTable;
         private System.Windows.Forms.TextBox _txtTable;
+        private System.Windows.Forms.TextBox _txtTableName;
     }
 }

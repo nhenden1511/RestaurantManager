@@ -80,7 +80,8 @@ namespace RestaurantManager
 
         private void _lvTable_DoubleClick(object sender, EventArgs e)
         {
-            var dialog = new ManagerTable();
+            var dialog = new ManagerTable(_txtTable.Text,_txtTableName.Text);
+            //dialog.Text = _txtTableName.Text;
             dialog.ShowDialog();
         }
 
@@ -90,6 +91,7 @@ namespace RestaurantManager
                 return;
             ListViewItem item = _lvTable.SelectedItems[0];
             _txtTable.Text = item.SubItems[1].Text.ToString().Trim();
+            _txtTableName.Text = item.SubItems[3].Text.ToString().Trim();
         }
 
         private void GetListView()

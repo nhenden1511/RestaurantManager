@@ -74,6 +74,10 @@
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -104,6 +108,7 @@
       <DependentUpon>MainActivitive.cs</DependentUpon>
     </Compile>
     <Compile Include="Server\GenusFunction.cs" />
+    <Compile Include="Server\OrderFunction.cs" />
     <Compile Include="Server\TableFuntion.cs" />
     <Compile Include="Server\AreaFuntion.cs" />
     <Compile Include="Server\EmployeeFunction.cs" />
@@ -166,6 +171,12 @@
     <Compile Include="View\Personal\ManagerTable.Designer.cs">
       <DependentUpon>ManagerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Personal\PaymentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Personal\PaymentDialog.Designer.cs">
+      <DependentUpon>PaymentDialog.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HomeActivitive.resx">
       <DependentUpon>HomeActivitive.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Personal\ManagerTable.resx">
       <DependentUpon>ManagerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Personal\PaymentDialog.resx">
+      <DependentUpon>PaymentDialog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
