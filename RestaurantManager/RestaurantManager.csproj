@@ -34,14 +34,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_black %283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.SuperGrid.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -50,18 +47,43 @@
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Guards, Version=1.0.14.0, Culture=neutral, PublicKeyToken=ac6aedb73a72f46e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guards.1.0.14\lib\net45\Guards.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="PresentationCore" />
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.Generic, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\net40\SQLite.Net.Platform.Generic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.Win32, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\net4\SQLite.Net.Platform.Win32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.Core.1.0.103\lib\net451\System.Data.SQLite.dll</HintPath>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.1, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.1\lib\net451\System.Data.SQLite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.SQLite.EF6, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -74,12 +96,16 @@
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,97 +115,131 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TypeConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b1d2d39c48564dfb, processorArchitecture=MSIL">
+      <HintPath>..\packages\TypeConverter.1.0.27\lib\portable-net45+wp8+wpa81+win81+netcore45+monoandroid1+xamarin.ios10\TypeConverter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="UIAutomationClient" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\UtillEnum.cs" />
+    <Compile Include="Entity\Table.cs" />
+    <Compile Include="Entity\Person.cs" />
+    <Compile Include="Entity\Content.cs" />
+    <Compile Include="Entity\Payment.cs" />
+    <Compile Include="Entity\PaymentDetail.cs" />
+    <Compile Include="Entity\Product.cs" />
+    <Compile Include="Entity\Order.cs" />
+    <Compile Include="Entity\ProductGroup.cs" />
+    <Compile Include="Model\CheckCountModel.cs" />
+    <Compile Include="Model\ProductModel.cs" />
+    <Compile Include="Model\ReportInfomationCustomer.cs" />
+    <Compile Include="Model\ReportInfomation.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Repository\PersonRepository.cs" />
+    <Compile Include="Repository\ContentRepository.cs" />
+    <Compile Include="Repository\PaymentDetailRepository.cs" />
+    <Compile Include="Repository\PaymentRepository.cs" />
+    <Compile Include="Repository\OrderRepository.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Repository\ProductGroupRepository.cs" />
+    <Compile Include="Repository\Base\BaseRepository.cs" />
+    <Compile Include="Data\Utill.cs" />
+    <Compile Include="Data\DataHelper.cs" />
     <Compile Include="Data\Contant.cs" />
-    <Compile Include="Data\DbConnect.cs" />
-    <Compile Include="HomeActivitive.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomeActivitive.Designer.cs">
-      <DependentUpon>HomeActivitive.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Context\DbInitialization.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Repository\Base\IBaseRepository.cs" />
     <Compile Include="MainActivitive.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainActivitive.Designer.cs">
       <DependentUpon>MainActivitive.cs</DependentUpon>
     </Compile>
-    <Compile Include="Server\GenusFunction.cs" />
-    <Compile Include="Server\OrderFunction.cs" />
-    <Compile Include="Server\TableFuntion.cs" />
-    <Compile Include="Server\AreaFuntion.cs" />
-    <Compile Include="Server\EmployeeFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server\ViandFunction.cs" />
-    <Compile Include="SQLite.cs" />
-    <Compile Include="SQLiteAsync.cs" />
-    <Compile Include="View\Manager\AddAreaDialog.cs">
+    <Compile Include="Context\SQLite.cs" />
+    <Compile Include="Context\SQLiteAsync.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\AddAreaDialog.Designer.cs">
-      <DependentUpon>AddAreaDialog.cs</DependentUpon>
+    <Compile Include="View\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\AddGenusDialog.cs">
+    <Compile Include="View\AddProductGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\AddGenusDialog.Designer.cs">
-      <DependentUpon>AddGenusDialog.cs</DependentUpon>
+    <Compile Include="View\AddProductGroup.Designer.cs">
+      <DependentUpon>AddProductGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\AddTableDialog.cs">
+    <Compile Include="View\CheckCount1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\AddTableDialog.Designer.cs">
-      <DependentUpon>AddTableDialog.cs</DependentUpon>
+    <Compile Include="View\CheckCount1.Designer.cs">
+      <DependentUpon>CheckCount1.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\AddVianddialog.cs">
+    <Compile Include="View\CheckCountByDate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\AddVianddialog.Designer.cs">
-      <DependentUpon>AddVianddialog.cs</DependentUpon>
+    <Compile Include="View\CheckCountByDate.Designer.cs">
+      <DependentUpon>CheckCountByDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\AreaDialog.cs">
+    <Compile Include="View\DeleteProductDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\AreaDialog.Designer.cs">
-      <DependentUpon>AreaDialog.cs</DependentUpon>
+    <Compile Include="View\DeleteProductDialog.Designer.cs">
+      <DependentUpon>DeleteProductDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\GenusDialog.cs">
+    <Compile Include="View\HomeActivitive.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\GenusDialog.Designer.cs">
-      <DependentUpon>GenusDialog.cs</DependentUpon>
+    <Compile Include="View\HomeActivitive.Designer.cs">
+      <DependentUpon>HomeActivitive.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\TableDialog.cs">
+    <Compile Include="View\OrderDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Manager\TableDialog.Designer.cs">
+    <Compile Include="View\OrderDialog.Designer.cs">
+      <DependentUpon>OrderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaymentReportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaymentReportDialog.Designer.cs">
+      <DependentUpon>PaymentReportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaymentReviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaymentReviewDialog.Designer.cs">
+      <DependentUpon>PaymentReviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductDialog.Designer.cs">
+      <DependentUpon>ProductDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductGroupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductGroupDialog.Designer.cs">
+      <DependentUpon>ProductGroupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductInventoryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductInventoryDialog.Designer.cs">
+      <DependentUpon>ProductInventoryDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TableDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TableDialog.Designer.cs">
       <DependentUpon>TableDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Manager\ViandDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Manager\ViandDialog.Designer.cs">
-      <DependentUpon>ViandDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Personal\ManagerTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Personal\ManagerTable.Designer.cs">
-      <DependentUpon>ManagerTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Personal\PaymentDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Personal\PaymentDialog.Designer.cs">
-      <DependentUpon>PaymentDialog.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="HomeActivitive.resx">
-      <DependentUpon>HomeActivitive.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainActivitive.resx">
       <DependentUpon>MainActivitive.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,38 +252,52 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\Manager\AddAreaDialog.resx">
-      <DependentUpon>AddAreaDialog.cs</DependentUpon>
+    <EmbeddedResource Include="Report\PaymentReport.rdlc" />
+    <EmbeddedResource Include="View\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\AddGenusDialog.resx">
-      <DependentUpon>AddGenusDialog.cs</DependentUpon>
+    <EmbeddedResource Include="View\AddProductGroup.resx">
+      <DependentUpon>AddProductGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\AddTableDialog.resx">
-      <DependentUpon>AddTableDialog.cs</DependentUpon>
+    <EmbeddedResource Include="View\CheckCount1.resx">
+      <DependentUpon>CheckCount1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\AddVianddialog.resx">
-      <DependentUpon>AddVianddialog.cs</DependentUpon>
+    <EmbeddedResource Include="View\CheckCountByDate.resx">
+      <DependentUpon>CheckCountByDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\AreaDialog.resx">
-      <DependentUpon>AreaDialog.cs</DependentUpon>
+    <EmbeddedResource Include="View\DeleteProductDialog.resx">
+      <DependentUpon>DeleteProductDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\GenusDialog.resx">
-      <DependentUpon>GenusDialog.cs</DependentUpon>
+    <EmbeddedResource Include="View\HomeActivitive.resx">
+      <DependentUpon>HomeActivitive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\TableDialog.resx">
+    <EmbeddedResource Include="View\OrderDialog.resx">
+      <DependentUpon>OrderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaymentReportDialog.resx">
+      <DependentUpon>PaymentReportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaymentReviewDialog.resx">
+      <DependentUpon>PaymentReviewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductDialog.resx">
+      <DependentUpon>ProductDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductGroupDialog.resx">
+      <DependentUpon>ProductGroupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductInventoryDialog.resx">
+      <DependentUpon>ProductInventoryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TableDialog.resx">
       <DependentUpon>TableDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Manager\ViandDialog.resx">
-      <DependentUpon>ViandDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Personal\ManagerTable.resx">
-      <DependentUpon>ManagerTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Personal\PaymentDialog.resx">
-      <DependentUpon>PaymentDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\RestaurantManager.Model.ProductModel.datasource" />
+    <None Include="Properties\DataSources\RestaurantManager.Model.ReportInfomation.datasource" />
+    <None Include="Properties\DataSources\RestaurantManager.Model.ReportInfomation1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -237,14 +311,39 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Old\Manager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsend_bubble_without.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\icon\ic_base_button_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_black %283%29.ico" />
+    <Content Include="logo_black.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\System.Data.SQLite.Core.1.0.103\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net451\System.Data.SQLite.Core.targets')" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.1\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.1\build\net451\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.103\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.103\build\net451\System.Data.SQLite.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.1\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.1\build\net451\System.Data.SQLite.Core.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

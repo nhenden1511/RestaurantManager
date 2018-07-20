@@ -1,4 +1,4 @@
-﻿using RestaurantManager.View.Manager;
+﻿using RestaurantManager.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
